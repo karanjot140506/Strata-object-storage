@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:7
+    container_name: strata-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - strata_mongo_data:/data/db
+
+  minio:
+    image: minio/minio:latest
+    container_name: strata-minio
+    ports:
+      - "9000:9000"   # S3 API — matches app.storage.endpoint
+      - "9001:9001"   # Web console
+    environment:
+      MINIO_ROOT_USER: admin
+      MINIO_ROOT_PASSWORD: admin123
+    command: server /data --console-address ":9001"
+    volumes:
+      - strata_minio_data:/data
+
+volumes:
+  strata_mongo_data:
+  strata_minio_data:
