@@ -1,0 +1,35 @@
+{
+  "groups": [
+    {
+      "name": "app.storage",
+      "type": "com.app.config.StorageProperties",
+      "sourceType": "com.app.config.StorageProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "app.storage.access-key",
+      "type": "java.lang.String",
+      "sourceType": "com.app.config.StorageProperties"
+    },
+    {
+      "name": "app.storage.endpoint",
+      "type": "java.lang.String",
+      "sourceType": "com.app.config.StorageProperties"
+    },
+    {
+      "name": "app.storage.region",
+      "type": "java.lang.String",
+      "sourceType": "com.app.config.StorageProperties"
+    },
+    {
+      "name": "app.storage.secret-key",
+      "type": "java.lang.String",
+      "sourceType": "com.app.config.StorageProperties"
+    }
+  ],
+  "hints": [],
+  "ignored": {
+    "properties": []
+  }
+}

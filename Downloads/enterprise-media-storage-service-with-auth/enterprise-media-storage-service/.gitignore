@@ -1,0 +1,19 @@
+# Backend (Maven/Java)
+enterprise-media-storage-service/target/
+enterprise-media-storage-service/.mvn/wrapper/maven-wrapper.jar
+*.class
+*.log
+
+# Frontend (Node)
+media-storage-frontend/node_modules/
+media-storage-frontend/dist/
+media-storage-frontend/.env
+media-storage-frontend/.env.local
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
